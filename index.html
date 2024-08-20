@@ -10,7 +10,19 @@
     <div id="container">
         <h1>Password Generator</h1>
         <h3>Click The button Below to Generate a Secure Password</h3>
-        <button id="generateBtn" onclick="generatePass()">Generate</button>
+        <form>
+            <label for="length" class="radio">Password Length: </label>
+            <input type="number" min="0" max="16" value="8" id="length"><br>
+            <label for="uppercase" class="radio">Include Uppercase: </label>
+            <input type="checkbox" id="uppercase"><br>
+            <label for="lowercase" class="radio">Include Lowercase: </label>
+            <input type="checkbox" id="lowercase"><br>
+            <label for="numbers" class="radio">Include Numbers: </label>
+            <input type="checkbox" id="numbers"><br>
+            <label for="symbols" class="radio">Include Symbols: </label>
+            <input type="checkbox" id="symbols"><br><br>
+        </form>
+        <button id="generateBtn">Generate</button>
         <h2 id="Password"></h2>
     </div>
 </body>
