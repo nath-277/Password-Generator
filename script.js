@@ -67,6 +67,7 @@ function generatePass() {
         response.textContent = 'Please select at least one character type.';
         return;
     }
+    
     if (passwordLength > 16) {
         response.textContent = 'Please select a value less than or equal to 16.';
         return;
@@ -79,7 +80,7 @@ function generatePass() {
     }
 
     // Display the generated password
-    
+    response.textContent = `Password: ${password}`;
 
 }
 
